@@ -17,7 +17,8 @@
     .preview{padding:27px 30px;min-height:780px}.bill{border:1px solid #9aa7b7;padding:26px 27px;min-height:720px;display:flex;flex-direction:column;color:#111827}.bill-head{text-align:center;border-bottom:2px solid #26374a;padding-bottom:16px}.bill-head h1{font-size:25px;letter-spacing:.04em;margin:0 0 2px;color:#ff5b8a}.bill-head .subtitle{margin:0 0 8px;font-size:18px;color:#7b2cbf}.bill-head p{margin:2px 0;font-size:14px}.bill-head .contact{margin-top:10px}.bill-meta{display:flex;justify-content:space-between;gap:20px;padding:15px 0;font-weight:700;font-size:14px}.bill-to{border:1px solid #64748b;min-height:48px;padding:9px 11px;font-size:14px}.bill-to strong{display:block;font-size:12px;text-transform:uppercase;color:#26374a;letter-spacing:.06em}.bill-to span{white-space:pre-wrap}
     table{width:100%;table-layout:fixed;border-collapse:collapse;margin-top:18px;font-size:16px}th,td{border:1px solid #64748b;padding:0 9px;vertical-align:top;line-height:28px}th{padding:5px 9px;background:#edf1f6;text-transform:uppercase;font-size:13px;letter-spacing:.05em;text-align:left;line-height:24px}th:last-child,td:last-child{text-align:right;width:100px;padding-right:12px}.particulars{white-space:normal;line-height:28px}.particulars .read-row{display:grid;width:100%;min-width:0;grid-template-columns:minmax(0,1fr) 120px;column-gap:10px;align-items:center;line-height:1.5}.particulars .single-column,.particulars .journey-row{grid-template-columns:minmax(0,1fr)}.particulars .read-row>span{display:block;min-width:0;white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip}.particulars .read-row .time{white-space:nowrap;text-align:left}.particulars .journey-row>span{white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip;font-size:14px;padding-left:6px}.info-row td{border-bottom-color:transparent}.charge-row td{border-top-color:transparent;border-bottom-color:transparent}.total-row td{font-weight:800;background:#f3f6fa}.amount-words{padding:13px 0 5px;font-size:15px}.amount-words b{display:block;margin-bottom:3px;color:#26374a;font-size:12px;text-transform:uppercase;letter-spacing:.06em}.sign{margin-top:auto;padding-top:36px;display:flex;justify-content:flex-end;text-align:center;font-size:14px}.sign-block{min-width:180px}.sign-line{width:160px;margin:0 auto 7px;border-top:1px solid #475569}.empty{color:#97a1b2}.calc-note{font-size:11px;color:#738096;margin-top:5px}
     .particulars .journey-row>span{font-size:15px;padding-left:0}
-    .bill-meta{justify-content:flex-end}.bill-date{text-align:right}
+    .bill-meta{justify-content:space-between}.bill-number{text-align:left}.bill-date{text-align:right}
+    .sign-image{display:block;width:160px;height:72px;margin:0 auto 4px;object-fit:contain}
     #outDieselLabel{white-space:nowrap;font-size:14px}
     .mode-switch{display:flex;gap:8px;margin:0 0 14px}.mode-switch .button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
     @media(max-width:850px){main{grid-template-columns:1fr}.preview{min-height:0}.bill{min-height:720px}}
@@ -31,6 +32,7 @@
     <section class="panel form-panel">
       <h2>Enter bill details</h2><p class="hint">Fill in the fields. The bill preview updates as you type.</p>
       <div class="section">Bill information</div><div class="fields">
+        <div class="field"><label for="billNumber">Bill number</label><input id="billNumber" placeholder="e.g. 001"></div>
         <div class="field"><label for="billDate">Bill date</label><input id="billDate" type="date"></div>
         <div class="field wide"><label for="billTo">Bill to</label><input id="billTo" placeholder="Customer or company name"></div>
         <div class="field wide"><label for="destination">Destination</label><input id="destination" placeholder="e.g. JMD – DCBL – JMD"></div>
@@ -64,7 +66,7 @@
     </section>
     <section class="panel preview"><article class="bill" id="bill">
       <header class="bill-head"><h1>M S TRAVELS</h1><p>Y M R COLONY, PRODDATUR - 516360</p><p class="contact">Mobile: 8978143222 &nbsp; • &nbsp; Email: <a href="mailto:aslam143222@gmail.com">aslam143222@gmail.com</a></p></header>
-      <div class="bill-meta"><span class="bill-date">Date: <span id="outBillDate" class="empty">—</span></span></div>
+      <div class="bill-meta"><span class="bill-number">Bill No: <span id="outBillNumber" class="empty">—</span></span><span class="bill-date">Date: <span id="outBillDate" class="empty">—</span></span></div>
       <div class="bill-to"><strong>Bill To</strong><span id="outBillTo" class="empty"> </span></div>
       <table><thead><tr><th>Particulars</th><th>Amount (₹)</th></tr></thead><tbody>
         <tr class="info-row"><td class="particulars" id="outParticulars"></td><td></td></tr>
@@ -73,11 +75,11 @@
         <tr class="charge-row" id="outDieselRow"><td id="outDieselLabel">Diesel</td><td id="outDiesel">—</td></tr>
         <tr class="charge-row"><td>Driver Allowance</td><td id="outAllowance">—</td></tr><tr class="charge-row"><td>Parking Charges</td><td id="outParking">—</td></tr><tr class="charge-row"><td>Tollgates</td><td id="outToll">—</td></tr><tr class="total-row"><td>Total</td><td id="outTotal">₹ 0.00</td></tr></tbody></table>
       <div class="amount-words"><b>Rupees in words</b><span id="outWords">Zero Rupees Only</span></div>
-        <div class="sign"><div class="sign-block"><div class="sign-line"></div>M S TRAVELS</div></div>
+        <div class="sign"><div class="sign-block"><img class="sign-image" src="Signature.png" alt="M S Travels signature"><div class="sign-line"></div>M S TRAVELS</div></div>
     </article></section>
   </main>
   <script>
-    const ids=['billDate','billTo','destination','vehicleNo','vehicleType','journeyDate','journeyTo','period','initial','initialTime','final','finalTime','hire','rate','fuelType','mileage','dieselRate','allowance','parking','toll'];
+    const ids=['billNumber','billDate','billTo','destination','vehicleNo','vehicleType','journeyDate','journeyTo','period','initial','initialTime','final','finalTime','hire','rate','fuelType','mileage','dieselRate','allowance','parking','toll'];
     const el=id=>document.getElementById(id), val=id=>el(id).value.trim(), num=id=>Number(val(id))||0;
     let rentMode='day';
     const money=n=>'₹ '+(Number.isFinite(n)?n:0).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
@@ -106,7 +108,7 @@
       const distance=hasMeterReadings?Math.max(0,num('final')-num('initial')):0, hire=rentMode==='day'?num('hire'):0, kmCharge=rentMode==='km'?distance*num('rate'):0, allowance=num('allowance'), parking=num('parking'), toll=num('toll');
       const liters=num('mileage')>0?Math.round(distance/num('mileage')):0, diesel=rentMode==='day'?liters*num('dieselRate'):0, total=hire+kmCharge+diesel+allowance+parking+toll, rounded=Math.round(total);
       const put=(id,text,empty=false)=>{el(id).textContent=text||'—';el(id).classList.toggle('empty',empty&&!text)};
-      put('outBillDate',dateText(val('billDate')),true);put('outBillTo',val('billTo'),true);
+      put('outBillNumber',val('billNumber'),true);put('outBillDate',dateText(val('billDate')),true);put('outBillTo',val('billTo'),true);
       const journeyFrom=dateText(val('journeyDate')), journeyTo=dateText(val('journeyTo'));
       const journey=[journeyFrom,journeyTo].filter(Boolean).join(' to ')+(val('period')?' ('+val('period')+')':'');
       const readRow=(text,time='',journeyRow=false)=>{
