@@ -14,10 +14,15 @@
     .panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:22px;box-shadow:0 4px 18px #1c35500a}.panel h2{font-size:18px;margin:0 0 5px}.hint{font-size:13px;color:var(--muted);margin:0 0 19px}
     .section{font-weight:700;color:var(--brand);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:20px 0 10px;padding-bottom:7px;border-bottom:1px solid #e9edf3}.section:first-of-type{margin-top:0}
     .fields{display:grid;grid-template-columns:1fr 1fr;gap:13px 12px}.field{min-width:0}.field.wide{grid-column:1/-1}label{display:block;font-size:12px;font-weight:700;margin-bottom:5px;color:#465268}input,textarea,select{width:100%;border:1px solid #cbd3df;border-radius:6px;padding:9px 10px;color:var(--ink);background:white;font:inherit;font-size:14px;outline:none}input:focus,textarea:focus,select:focus{border-color:#4381ba;box-shadow:0 0 0 3px #4381ba20}textarea{resize:vertical;min-height:62px}
-    .preview{padding:27px 30px;min-height:780px}.bill{border:1px solid #9aa7b7;padding:26px 27px;min-height:720px;display:flex;flex-direction:column;color:#111827}.bill-head{text-align:center;border-bottom:2px solid #26374a;padding-bottom:16px}.bill-head h1{font-size:25px;letter-spacing:.13em;margin:0 0 2px;color:var(--travel-red)}.bill-head p{margin:2px 0;font-size:14px}.bill-head .contact{margin-top:6px}.bill-meta{display:flex;justify-content:space-between;gap:20px;padding:15px 0;font-weight:700;font-size:14px}.bill-to{border:1px solid #64748b;min-height:48px;padding:9px 11px;font-size:14px}.bill-to strong{display:block;font-size:12px;text-transform:uppercase;color:#26374a;letter-spacing:.06em}.bill-to span{white-space:pre-wrap}
-    table{width:100%;border-collapse:collapse;margin-top:18px;font-size:16px}th,td{border:1px solid #64748b;padding:0 9px;vertical-align:top;line-height:28px}th{padding:5px 9px;background:#edf1f6;text-transform:uppercase;font-size:13px;letter-spacing:.05em;text-align:left;line-height:24px}th:last-child,td:last-child{text-align:right;width:118px}.particulars{white-space:pre-wrap;line-height:28px}.info-row td{border-bottom-color:transparent}.charge-row td{border-top-color:transparent;border-bottom-color:transparent}.total-row td{font-weight:800;background:#f3f6fa}.amount-words{padding:13px 0 5px;font-size:15px}.amount-words b{display:block;margin-bottom:3px;color:#26374a;font-size:12px;text-transform:uppercase;letter-spacing:.06em}.sign{margin-top:auto;padding-top:36px;display:flex;justify-content:flex-end;text-align:center;font-size:14px}.sign-block{min-width:180px}.sign img{display:block;width:180px;height:68px;object-fit:contain;margin:0 auto 1px}.sign-line{width:160px;margin:0 auto 7px;border-top:1px solid #475569}.empty{color:#97a1b2}.calc-note{font-size:11px;color:#738096;margin-top:5px}
+    .preview{padding:27px 30px;min-height:780px}.bill{border:1px solid #9aa7b7;padding:26px 27px;min-height:720px;display:flex;flex-direction:column;color:#111827}.bill-head{text-align:center;border-bottom:2px solid #26374a;padding-bottom:16px}.bill-head h1{font-size:25px;letter-spacing:.04em;margin:0 0 2px;color:#ff5b8a}.bill-head .subtitle{margin:0 0 8px;font-size:18px;color:#7b2cbf}.bill-head p{margin:2px 0;font-size:14px}.bill-head .contact{margin-top:10px}.bill-meta{display:flex;justify-content:space-between;gap:20px;padding:15px 0;font-weight:700;font-size:14px}.bill-to{border:1px solid #64748b;min-height:48px;padding:9px 11px;font-size:14px}.bill-to strong{display:block;font-size:12px;text-transform:uppercase;color:#26374a;letter-spacing:.06em}.bill-to span{white-space:pre-wrap}
+    table{width:100%;table-layout:fixed;border-collapse:collapse;margin-top:18px;font-size:16px}th,td{border:1px solid #64748b;padding:0 9px;vertical-align:top;line-height:28px}th{padding:5px 9px;background:#edf1f6;text-transform:uppercase;font-size:13px;letter-spacing:.05em;text-align:left;line-height:24px}th:last-child,td:last-child{text-align:right;width:100px;padding-right:12px}.particulars{white-space:normal;line-height:28px}.particulars .read-row{display:grid;width:100%;min-width:0;grid-template-columns:minmax(0,1fr) 120px;column-gap:10px;align-items:center;line-height:1.5}.particulars .single-column,.particulars .journey-row{grid-template-columns:minmax(0,1fr)}.particulars .read-row>span{display:block;min-width:0;white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip}.particulars .read-row .time{white-space:nowrap;text-align:left}.particulars .journey-row>span{white-space:normal;overflow:visible;overflow-wrap:anywhere;text-overflow:clip;font-size:14px;padding-left:6px}.info-row td{border-bottom-color:transparent}.charge-row td{border-top-color:transparent;border-bottom-color:transparent}.total-row td{font-weight:800;background:#f3f6fa}.amount-words{padding:13px 0 5px;font-size:15px}.amount-words b{display:block;margin-bottom:3px;color:#26374a;font-size:12px;text-transform:uppercase;letter-spacing:.06em}.sign{margin-top:auto;padding-top:36px;display:flex;justify-content:flex-end;text-align:center;font-size:14px}.sign-block{min-width:180px}.sign-line{width:160px;margin:0 auto 7px;border-top:1px solid #475569}.empty{color:#97a1b2}.calc-note{font-size:11px;color:#738096;margin-top:5px}
+    .particulars .journey-row>span{font-size:15px;padding-left:0}
+    .bill-meta{justify-content:flex-end}.bill-date{text-align:right}
+    #outDieselLabel{white-space:nowrap;font-size:14px}
+    .mode-switch{display:flex;gap:8px;margin:0 0 14px}.mode-switch .button[aria-pressed="true"]{background:var(--brand);border-color:var(--brand);color:#fff}
     @media(max-width:850px){main{grid-template-columns:1fr}.preview{min-height:0}.bill{min-height:720px}}
     @media print{ @page{size:A4;margin:0}body{background:white;font-size:13px}.top,.form-panel{display:none!important}main{display:block;margin:0;padding:0;max-width:none}.preview{padding:0;border:0;box-shadow:none}.bill{width:186mm;margin:12mm auto;border:1px solid #222;padding:17mm 10mm 10mm;min-height:0;height:273mm;break-inside:avoid}.sign{transform:translateY(-8mm)}.bill-head h1{font-size:24px}.bill-head p{font-size:15px}.bill-meta{font-size:15px}.bill-to{font-size:15px}th,td{border-color:#555}.bill-to{border-color:#555}.total-row td{background:#f3f3f3!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}}
+    @media print{.particulars .read-row>span{font-size:15px;line-height:1.5;white-space:normal;overflow-wrap:anywhere}.particulars .single-column>span{white-space:normal;overflow-wrap:anywhere}.particulars .journey-row>span{font-size:15px;padding-left:0}}
   </style>
 </head>
 <body>
@@ -26,7 +31,6 @@
     <section class="panel form-panel">
       <h2>Enter bill details</h2><p class="hint">Fill in the fields. The bill preview updates as you type.</p>
       <div class="section">Bill information</div><div class="fields">
-        <div class="field"><label for="billNo">Bill number</label><input id="billNo" placeholder="e.g. MS-001"></div>
         <div class="field"><label for="billDate">Bill date</label><input id="billDate" type="date"></div>
         <div class="field wide"><label for="billTo">Bill to</label><input id="billTo" placeholder="Customer or company name"></div>
         <div class="field wide"><label for="destination">Destination</label><input id="destination" placeholder="e.g. JMD – DCBL – JMD"></div>
@@ -34,62 +38,112 @@
       <div class="section">Vehicle and journey</div><div class="fields">
         <div class="field"><label for="vehicleNo">Vehicle number</label><input id="vehicleNo" placeholder="e.g. TS08EN2101"></div>
         <div class="field"><label for="vehicleType">Vehicle type</label><input id="vehicleType" placeholder="e.g. Swift Dzire"></div>
-        <div class="field"><label for="journeyDate">Journey date</label><input id="journeyDate" type="date"></div>
+        <div class="field"><label for="journeyDate">Journey from</label><input id="journeyDate" type="date"></div>
+        <div class="field"><label for="journeyTo">Journey to</label><input id="journeyTo" type="date"></div>
         <div class="field"><label for="period">Journey period</label><input id="period" placeholder="e.g. One Day"></div>
         <div class="field"><label for="initial">Initial meter reading (km)</label><input id="initial" type="number" min="0" step="1" placeholder="0"></div>
         <div class="field"><label for="initialTime">Start time</label><input id="initialTime" placeholder="e.g. 02:00 PM"></div>
         <div class="field"><label for="final">Final meter reading (km)</label><input id="final" type="number" min="0" step="1" placeholder="0"></div>
         <div class="field"><label for="finalTime">End time</label><input id="finalTime" placeholder="e.g. 06:00 PM"></div>
       </div>
-      <div class="section">Charges and fuel (₹)</div><div class="fields">
-        <div class="field"><label for="hire">Hire charges</label><input id="hire" type="number" min="0" step="0.01" placeholder="0.00"></div>
-        <div class="field"><label for="rate">Rate charged per kilometer</label><input id="rate" type="number" min="0" step="0.01" placeholder="Optional"></div>
-        <div class="field"><label for="fuelType">Fuel type</label><select id="fuelType"><option value="Diesel">Diesel</option><option value="Petrol">Petrol</option></select></div>
-        <div class="field"><label for="mileage">Fuel mileage (km per liter)</label><input id="mileage" type="number" min="0" step="0.1" placeholder="e.g. 13"></div>
-        <div class="field"><label for="dieselRate" id="fuelRateLabel">Diesel rate per liter (₹)</label><input id="dieselRate" type="number" min="0" step="0.01" placeholder="e.g. 97"></div>
+      <div class="section">Charges and fuel (₹)</div>
+      <div class="mode-switch" role="group" aria-label="Rent calculation mode">
+        <button class="button" type="button" id="perDayBtn" aria-pressed="true">Rent per day</button>
+        <button class="button" type="button" id="perKmBtn" aria-pressed="false">Rent per KM</button>
+      </div>
+      <div class="fields">
+        <div class="field" id="hireField"><label for="hire">Hire charges</label><input id="hire" type="number" min="0" step="0.01" placeholder="0.00"></div>
+        <div class="field" id="rateField" hidden><label for="rate">Rate charged per kilometer (₹)</label><input id="rate" type="number" min="0" step="0.01" placeholder="e.g. 10"></div>
+        <div class="field" id="fuelTypeField"><label for="fuelType">Fuel type</label><select id="fuelType"><option value="Diesel">Diesel</option><option value="Petrol">Petrol</option></select></div>
+        <div class="field" id="mileageField"><label for="mileage">Fuel mileage (km per liter)</label><input id="mileage" type="number" min="0" step="0.1" placeholder="e.g. 13"></div>
+        <div class="field" id="dieselRateField"><label for="dieselRate" id="fuelRateLabel">Diesel rate per liter (₹)</label><input id="dieselRate" type="number" min="0" step="0.01" placeholder="e.g. 97"></div>
         <div class="field"><label for="allowance">Driver allowance</label><input id="allowance" type="number" min="0" step="0.01" placeholder="0.00"></div>
         <div class="field"><label for="parking">Parking charges</label><input id="parking" type="number" min="0" step="0.01" placeholder="0.00"></div>
         <div class="field"><label for="toll">Toll charges</label><input id="toll" type="number" min="0" step="0.01" placeholder="0.00"></div>
       </div>
     </section>
     <section class="panel preview"><article class="bill" id="bill">
-      <header class="bill-head"><h1>M S TRAVELS</h1><p>Y M R COLONY, PRODDATUR – 516360</p><p class="contact">Mobile: 8978143222 &nbsp;·&nbsp; Email: aslam143222@gmail.com</p></header>
-      <div class="bill-meta"><span>Bill No: <span id="outBillNo" class="empty">—</span></span><span>Date: <span id="outBillDate" class="empty">—</span></span></div>
+      <header class="bill-head"><h1>M S TRAVELS</h1><p>Y M R COLONY, PRODDATUR - 516360</p><p class="contact">Mobile: 8978143222 &nbsp; • &nbsp; Email: <a href="mailto:aslam143222@gmail.com">aslam143222@gmail.com</a></p></header>
+      <div class="bill-meta"><span class="bill-date">Date: <span id="outBillDate" class="empty">—</span></span></div>
       <div class="bill-to"><strong>Bill To</strong><span id="outBillTo" class="empty"> </span></div>
       <table><thead><tr><th>Particulars</th><th>Amount (₹)</th></tr></thead><tbody>
         <tr class="info-row"><td class="particulars" id="outParticulars"></td><td></td></tr>
-        <tr class="charge-row"><td>Hire Charges</td><td id="outHire">—</td></tr>
-        <tr class="charge-row"><td id="outRateLabel">Rate Charged Per Kilometer</td><td></td></tr>
-        <tr class="charge-row"><td id="outDieselLabel">Diesel</td><td id="outDiesel">—</td></tr>
+        <tr class="charge-row" id="outHireRow"><td>Hire Charges</td><td id="outHire">—</td></tr>
+        <tr class="charge-row" id="outKmRow" hidden><td id="outKmLabel">Rent Per Kilometer</td><td id="outKmAmount">—</td></tr>
+        <tr class="charge-row" id="outDieselRow"><td id="outDieselLabel">Diesel</td><td id="outDiesel">—</td></tr>
         <tr class="charge-row"><td>Driver Allowance</td><td id="outAllowance">—</td></tr><tr class="charge-row"><td>Parking Charges</td><td id="outParking">—</td></tr><tr class="charge-row"><td>Tollgates</td><td id="outToll">—</td></tr><tr class="total-row"><td>Total</td><td id="outTotal">₹ 0.00</td></tr></tbody></table>
       <div class="amount-words"><b>Rupees in words</b><span id="outWords">Zero Rupees Only</span></div>
-      <div class="sign"><div class="sign-block"><img src="Signature.png" alt="T. Mahammad Aslam signature"><div class="sign-line"></div>T. Mahammad Aslam<br>Vehicle Contractor</div></div>
+        <div class="sign"><div class="sign-block"><div class="sign-line"></div>M S TRAVELS</div></div>
     </article></section>
   </main>
   <script>
-    const ids=['billNo','billDate','billTo','destination','vehicleNo','vehicleType','journeyDate','period','initial','initialTime','final','finalTime','hire','rate','fuelType','mileage','dieselRate','allowance','parking','toll'];
+    const ids=['billDate','billTo','destination','vehicleNo','vehicleType','journeyDate','journeyTo','period','initial','initialTime','final','finalTime','hire','rate','fuelType','mileage','dieselRate','allowance','parking','toll'];
     const el=id=>document.getElementById(id), val=id=>el(id).value.trim(), num=id=>Number(val(id))||0;
+    let rentMode='day';
     const money=n=>'₹ '+(Number.isFinite(n)?n:0).toLocaleString('en-IN',{minimumFractionDigits:2,maximumFractionDigits:2});
     function dateText(v){if(!v)return '';const [y,m,d]=v.split('-');return `${d}-${m}-${y}`}
     const ones=['','One','Two','Three','Four','Five','Six','Seven','Eight','Nine','Ten','Eleven','Twelve','Thirteen','Fourteen','Fifteen','Sixteen','Seventeen','Eighteen','Nineteen'];
     const tens=['','','Twenty','Thirty','Forty','Fifty','Sixty','Seventy','Eighty','Ninety'];
     function under1000(n){let s='';if(n>=100){s=ones[Math.floor(n/100)]+' Hundred';n%=100;if(n)s+=' ';}if(n>=20){s+=tens[Math.floor(n/10)];if(n%10)s+=' '+ones[n%10]}else if(n)s+=ones[n];return s}
     function words(n){n=Math.floor(Math.abs(n));if(!n)return 'Zero';const units=[[10000000,'Crore'],[100000,'Lakh'],[1000,'Thousand'],[1,'']];let out=[];for(const [v,name] of units){if(n>=v){const q=Math.floor(n/v);out.push(under1000(q)+(name?' '+name:''));n%=v}}return out.join(' ')}
+    function setRentMode(mode){
+      rentMode=mode;
+      const perKm=mode==='km';
+      el('perDayBtn').setAttribute('aria-pressed',String(!perKm));
+      el('perKmBtn').setAttribute('aria-pressed',String(perKm));
+      el('hireField').hidden=perKm;
+      el('rateField').hidden=!perKm;
+      el('fuelTypeField').hidden=perKm;
+      el('mileageField').hidden=perKm;
+      el('dieselRateField').hidden=perKm;
+      el('outHireRow').hidden=perKm;
+      el('outKmRow').hidden=!perKm;
+      el('outDieselRow').hidden=perKm;
+      update();
+    }
     function update(){
-      const distance=Math.max(0,num('final')-num('initial')), hire=num('hire'), allowance=num('allowance'), parking=num('parking'), toll=num('toll');
-      const liters=num('mileage')>0?Math.round(distance/num('mileage')):0, diesel=liters*num('dieselRate'), total=hire+diesel+allowance+parking+toll, rounded=Math.round(total);
+      const hasMeterReadings=val('initial')!==''&&val('final')!=='';
+      const distance=hasMeterReadings?Math.max(0,num('final')-num('initial')):0, hire=rentMode==='day'?num('hire'):0, kmCharge=rentMode==='km'?distance*num('rate'):0, allowance=num('allowance'), parking=num('parking'), toll=num('toll');
+      const liters=num('mileage')>0?Math.round(distance/num('mileage')):0, diesel=rentMode==='day'?liters*num('dieselRate'):0, total=hire+kmCharge+diesel+allowance+parking+toll, rounded=Math.round(total);
       const put=(id,text,empty=false)=>{el(id).textContent=text||'—';el(id).classList.toggle('empty',empty&&!text)};
-      put('outBillNo',val('billNo'),true);put('outBillDate',dateText(val('billDate')),true);put('outBillTo',val('billTo'),true);
-      const journey=dateText(val('journeyDate'))+(val('period')?' ('+val('period')+')':'');
-      const lines=[`Destination: ${val('destination')||'—'}`,`Vehicle No: ${val('vehicleNo')||'—'}`,`Type of Vehicle: ${val('vehicleType')||'—'}`,`Period of Journey From: ${journey||'—'}`,`Final Reading: ${val('final')||'—'} km    Time: ${val('finalTime')||'—'}`,`Initial Reading: ${val('initial')||'—'} km    Time: ${val('initialTime')||'—'}`,`Total Reading: ${distance.toLocaleString('en-IN')} km`];el('outParticulars').textContent=lines.join('\n');
-      el('outHire').textContent=money(hire);el('outRateLabel').textContent='Rate Charged Per Kilometer'+(val('rate')?' : '+money(num('rate')):'');
+      put('outBillDate',dateText(val('billDate')),true);put('outBillTo',val('billTo'),true);
+      const journeyFrom=dateText(val('journeyDate')), journeyTo=dateText(val('journeyTo'));
+      const journey=[journeyFrom,journeyTo].filter(Boolean).join(' to ')+(val('period')?' ('+val('period')+')':'');
+      const readRow=(text,time='',journeyRow=false)=>{
+        const row=document.createElement('div');
+        row.className='read-row'+(journeyRow?' journey-row':time?'':' single-column');
+        const label=document.createElement('span');
+        label.textContent=text;
+        row.append(label);
+        if(time){
+          const timeLabel=document.createElement('span');
+          timeLabel.className='time';
+          timeLabel.textContent=time;
+          row.append(timeLabel);
+        }
+        return row;
+      };
+      el('outParticulars').replaceChildren(
+        readRow('Destination: '+(val('destination')||'—')),
+        readRow('Vehicle No: '+(val('vehicleNo')||'—')),
+        readRow('Type of Vehicle: '+(val('vehicleType')||'—')),
+        readRow('Period of Journey: '+(journey||'—'),'',true),
+        readRow('Final Reading: '+(val('final')||'—')+' km','Time: '+(val('finalTime')||'—')),
+        readRow('Initial Reading: '+(val('initial')||'—')+' km','Time: '+(val('initialTime')||'—')),
+        readRow('Total Reading: '+(hasMeterReadings?distance.toLocaleString('en-IN'):'—')+' km')
+      );
+      el('outHire').textContent=money(hire);
+      el('outKmLabel').textContent=`Rent Per Kilometer: ${distance.toLocaleString('en-IN')} km × ${money(num('rate'))}`;
+      el('outKmAmount').textContent=money(kmCharge);
       const fuel=val('fuelType')||'Diesel';el('fuelRateLabel').textContent=fuel+' rate per liter (₹)';
-      el('outDieselLabel').textContent=`${fuel}: ${distance.toLocaleString('en-IN')} Kms / ${val('mileage')||'—'} Mileage = ${liters} Liters × Rs ${val('dieselRate')||'—'} Per Liter`;
+      el('outDieselLabel').textContent=`${fuel}: ${distance.toLocaleString('en-IN')} Kms / ${val('mileage')||'—'} Mileage = ${liters} Ltrs × ₹ ${val('dieselRate')||'—'}`;
       el('outDiesel').textContent=money(diesel);el('outAllowance').textContent=money(allowance);el('outParking').textContent=money(parking);el('outToll').textContent=money(toll);el('outTotal').textContent=money(total);el('outWords').textContent=words(rounded)+' Rupees Only';
     }
     ids.forEach(id=>el(id).addEventListener('input',update));
+    el('perDayBtn').addEventListener('click',()=>setRentMode('day'));
+    el('perKmBtn').addEventListener('click',()=>setRentMode('km'));
     el('saveBtn').addEventListener('click',()=>window.print());
-    el('clearBtn').addEventListener('click',()=>{if(confirm('Clear all bill details?')){ids.forEach(id=>el(id).value='');update()}});
+    el('clearBtn').addEventListener('click',()=>{if(confirm('Clear all bill details?')){ids.forEach(id=>el(id).value='');el('fuelType').value='Diesel';setRentMode('day')}});
     update();
   </script>
 </body>
